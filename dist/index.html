@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Snacks Calculator</title>
+</head>
+<body class=" lg:pt-10 h-screen bg-gradient-to-r from-black to-zinc-400">
+    <main class=" p-8 h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80  border-gray-200 max-w-lg mx-auto shadow-md">
+
+      <header>
+       <div>
+        <h3 class="text-3xl font-bold text-zinc-900">
+          <span id="guestName"></span> Sweets Calculator.
+        </h3>
+        <p class="text-gray-100 ">Calculator for calculate daily profits.</p>
+        
+       </div>
+
+        
+      </header>
+
+      <section class="pt-5">
+        <!-- <p class="pb-2 text-gray-800 font-light"> <span class="text-yellow-300">Important note</span> : Enter only snacks KG (kilograms) in below.</p> -->
+        <form class="space-y-4">
+
+          
+          <input type="number"  id="dhodhalKg" placeholder="Enter Dhodhal KG here." class="snacks_input">
+          
+
+          <input type="number"  id="paniyamKg" placeholder="Enter Paniyam KG here." class="snacks_input">
+
+          <input type="number" id="kalakalaKg" placeholder="Enter Kalakala KG here." class="snacks_input">
+
+           <input type="number" id="elluKg" placeholder="Enter Ellu KG here." class="snacks_input">
+
+           <input type="number" id="murukkuKg" placeholder="Enter Murukku KG here." class="snacks_input">
+
+           <input type="number" id="oattumaavuKg" placeholder="Enter Oattumaavu KG here." class="snacks_input">
+           
+        </form>
+        <div class="flex justify-center py-5">
+          <button class="px-7 py-3 bg-zinc-900 text-white rounded-2xl font-bold hover:bg-zinc-700"
+          onclick="calculate()">
+            Calculate
+          </button>
+        </div>
+      </section>
+
+    <!-- Result -->
+    <section class="flex justify-center">
+      <h4 class="font-bold text-xl text-zinc-900" id="profit">
+       
+      </h4>
+    </section>
+    </main>
+   
+
+
+
+    <script src="./main.js">
+
+    </script>
+  </body>
+</html>
